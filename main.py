@@ -21,7 +21,7 @@ def decode():
 
 
 
-if __name__=='__main__':
+def main():
     num=''
     while True:
         choice=int(input('Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n\nPlease enter an option: '))
@@ -33,3 +33,6 @@ if __name__=='__main__':
             print(f'The encoded password is {encoded_num}, and the original password is {decode(encoded_num)}.')
         elif choice==3:
             break
+
+if __name__=='__main__':
+    main()
